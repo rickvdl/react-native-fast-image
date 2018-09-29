@@ -47,7 +47,7 @@ export type FastImageSource = {
     cache?: CacheControls,
 }
 
-export type FastImageProps = $ReadOnly<{|
+export type FastImageProps = $ReadOnly<{
     ...ViewProps,
     onError?: ?() => void,
     onLoad?: ?(event?: OnLoadEvent) => void,
@@ -60,7 +60,7 @@ export type FastImageProps = $ReadOnly<{|
     resizeMode?: ?ResizeModes,
     fallback?: ?boolean,
     testID?: ?string,
-|}>
+}>
 
 declare export default class FastImage extends React$Component<FastImageProps> {
     static resizeMode: ResizeMode;
